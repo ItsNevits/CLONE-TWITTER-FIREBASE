@@ -1,0 +1,118 @@
+#container-login {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1039px 864px;
+  grid-template-rows: 100vh;
+
+  #container-login-left {
+    grid-area: left;
+    background: url(https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .MuiSvgIcon-root {
+      font-size: 30rem;
+      color: #ffff;
+    }
+  }
+
+  #container-login-right {
+    grid-area: right;
+    background: #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .inputs-area {
+      width: 90%;
+
+      .form-login {
+        margin-top: 15px;
+
+        input {
+          width: 207px;
+          height: 58px;
+          margin: 16px 8px 0px 8px;
+          background: none;
+          border: 1px solid #6e767d;
+          border-radius: 0.2rem;
+          color: #fff;
+          font-size: 17px;
+          padding-left: 0.4rem;
+
+          &::placeholder {
+            color: #6e767d;
+          }
+        }
+
+        button {
+          width: 157px;
+          height: 48px;
+          background: none;
+          border: 1.5px solid #1da1f2;
+          color: #1da1f2;
+          border-radius: 2.5rem;
+          font-weight: 600;
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 7rem;
+      color: #ffff;
+
+      .MuiSvgIcon-root {
+        font-size: 3rem;
+      }
+
+      .text-login {
+        width: 100%;
+        p {
+          font-weight: 600;
+          &:nth-child(1) {
+            width: 60%;
+            font-size: 4rem;
+          }
+          &:nth-child(2) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .container-buttons {
+        display: flex;
+        flex-direction: column;
+
+        .btn-register {
+          margin-bottom: 20px;
+          width: 380px;
+          height: 48px;
+          color: #fff;
+          background: #1da1f2;
+          border-radius: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        .btn-login {
+          margin-bottom: 20px;
+          width: 380px;
+          height: 48px;
+          color: #1da1f2;
+          border: 2px solid #1da1f2;
+          background: none;
+          border-radius: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
