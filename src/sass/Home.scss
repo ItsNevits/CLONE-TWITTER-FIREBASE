@@ -67,6 +67,134 @@
     border-left: 1px solid #3c3e41;
     border-right: 1px solid #3c3e41;
     color: #d9d9d9;
+    overflow-y: scroll;
+
+    .tittle {
+      border-bottom: 1px solid #3c3e41;
+      padding-left: 10px;
+    }
+
+    .container-inputs {
+      width: 100%;
+      border-bottom: 1px solid #3c3e41;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .inputs {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 48px;
+            height: auto;
+            border-radius: 50%;
+            padding: 10px;
+          }
+
+          input {
+            margin-left: 10px;
+            margin-top: 10px;
+            border: none;
+            outline: 0;
+            font-size: 19px;
+            line-height: 25px;
+            color: #fff;
+            background: none;
+          }
+        }
+
+        .input-files {
+          display: flex;
+          justify-content: space-evenly;
+
+          .input-file {
+            font-size: 15px;
+            overflow: hidden;
+            color: transparent;
+          }
+
+          .btn-tweet {
+            background: #1d91da;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+
+    #container-post {
+      padding: 10px 15px;
+      border-top: 1px solid #3c3e41;
+      margin-top: 5px;
+      display: flex;
+      align-items: flex-start;
+
+      .post-avatar {
+        margin-top: 5px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      .post-body {
+        padding-left: 10px;
+        width: 100%;
+        overflow: hidden;
+
+        .post-icon {
+          font-size: 14px;
+          color: #1d91da;
+        }
+
+        .post-name {
+          display: flex;
+          align-items: center;
+
+          span {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 15px;
+            color: #5b7083;
+            margin-left: 15px;
+          }
+        }
+
+        .description {
+          margin-bottom: 10px;
+
+          p {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 16px;
+            line-height: 19.6875px;
+          }
+        }
+
+        .img-post {
+          width: 100%;
+
+          img {
+            border-radius: 20px;
+            min-width: 100%;
+            width: 100%;
+            min-height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
   }
 
   #container-widgets {
