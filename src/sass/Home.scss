@@ -1,0 +1,76 @@
+#container-home {
+  display: grid;
+  margin: 0 auto;
+  width: 65%;
+
+  grid-template-areas: "sidebar content widgets";
+  grid-template-columns: 275px 600px 350px;
+  grid-template-rows: 100vh;
+
+  #container-sibar {
+    grid-area: sidebar;
+    color: white;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      padding: 7px;
+    }
+
+    .container-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+
+      .btn-logout {
+        width: 90%;
+        height: 40px;
+        border-radius: 30px;
+        background: #1d91da;
+        font-size: 1.05rem;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    #content-icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 14px 10px;
+      cursor: pointer;
+      border-radius: 40px;
+
+      h2 {
+        font-size: 19px;
+        margin: 0 15px 0 20px;
+        font-weight: 600;
+      }
+
+      .MuiSvgIcon-root {
+        width: 30px;
+        height: 30px;
+      }
+      &:hover {
+        background: #1da0f257;
+        color: #1d91da;
+        transform: color 1s ease-out;
+      }
+    }
+  }
+
+  #container-content {
+    grid-area: content;
+    border-left: 1px solid #3c3e41;
+    border-right: 1px solid #3c3e41;
+    color: #d9d9d9;
+  }
+
+  #container-widgets {
+    color: #d9d9d9;
+    grid-area: widgets;
+  }
+}

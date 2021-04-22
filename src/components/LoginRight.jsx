@@ -21,15 +21,15 @@ const LoginRight = (props) => {
     <div id='container-login-right'>
       <div className='inputs-area'>
         <form action='' className='form-login'>
-          <input type='text' placeholder='Phone number or Userna..' />
-          <input type='password' placeholder='Password' />
+          <input type='text' placeholder='Phone number or Userna..' disabled />
+          <input type='password' placeholder='Password' disabled />
 
           <button
             type='submit'
             onClick={() => dispatch(ingresoUsuarioAccion())}
             disabled={loading}
           >
-            Log In
+            Log In with Google
           </button>
         </form>
       </div>
@@ -41,8 +41,12 @@ const LoginRight = (props) => {
           <p>Únete a Twitter hoy mismo.</p>
         </div>
         <div className='container-buttons'>
-          <button className='btn-register'>Registrate</button>
-          <button className='btn-login'>Iniciar sesión</button>
+          <button className='btn-register' disabled>
+            Registrate
+          </button>
+          <button className='btn-login' disabled>
+            Iniciar sesión
+          </button>
         </div>
       </div>
     </div>

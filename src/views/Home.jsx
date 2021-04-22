@@ -1,22 +1,15 @@
-import React from "react";
-import { withRouter } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import Sidebar from "../components/Sidebar";
+import ContentHome from "../components/ContentHome";
+import Widgets from "../components/Widgets";
 
-import { cerrarSesionAccion } from "../redux/usuarioDucks";
-
-const Home = (props) => {
-  const dispatch = useDispatch();
-
-  const cerrarSesion = () => {
-    dispatch(cerrarSesionAccion());
-    props.history.push("/login");
-  };
-
+const Home = () => {
   return (
-    <div>
-      <button onClick={cerrarSesion}>Cerrar Sesion</button>
+    <div id='container-home'>
+      <Sidebar />
+      <ContentHome />
+      <Widgets />
     </div>
   );
 };
 
-export default withRouter(Home);
+export default Home;
